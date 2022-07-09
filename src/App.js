@@ -1,5 +1,5 @@
 function App() {
-    return <>Hello World</>;
+    return <>Netlify CI/CD Testing</>;
 }
 
 export default App;
