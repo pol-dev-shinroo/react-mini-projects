@@ -1,5 +1,15 @@
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Home/Home.jsx";
+
 function App() {
-    return <>Netlify CI/CD Testing</>;
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home />} />
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
 export default App;
