@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const fetchData = axios.create({
-    baseURL: process.env.REACT_APP_API_KEY,
+    baseURL: "https://course-api.com/react-tours-project",
     timeout: 1000,
     headers: {
         Accept: "*/*",

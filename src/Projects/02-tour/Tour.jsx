@@ -10,7 +10,7 @@ const Tour = () => {
     const loadData = async () => {
         setIsLoading(true);
         try {
-            const res = await fetchData.get("tours");
+            const res = await fetchData.get("/");
             setIsLoading(false);
             setTour(res.data);
         } catch (err) {
@@ -30,7 +30,7 @@ const Tour = () => {
     if (isLoading) {
         return (
             <Wrapper>
-                <Main loading>
+                <Main loading="true">
                     <Loading />
                 </Main>
             </Wrapper>
@@ -61,7 +61,7 @@ const Main = styled.div`
     max-width: 620px;
     margin: auto;
     ${(props) =>
-        props.loading &&
+        props.loading === "true" &&
         `display: flex; align-items: center; justify-content: center;`}
 `;
 
