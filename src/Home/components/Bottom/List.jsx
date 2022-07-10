@@ -29,6 +29,7 @@ const ItemBox = styled.a`
     }
     width: 100%;
     height: 500px;
+    cursor: pointer;
 `;
 
 const ImageContaner = styled.div`
