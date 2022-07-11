@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home, Birthday, Tour, Review } from "./pages";
+import { Home, Birthday, Tour, Review, Accordion } from "./pages";
 
 function App() {
     return (
@@ -10,6 +10,7 @@ function App() {
                 <Route path="birthday" element={<Birthday />} />
                 <Route path="tour" element={<Tour />} />
                 <Route path="review" element={<Review />} />
+                <Route path="accordion" element={<Accordion />} />
             </Routes>
         </BrowserRouter>
     );

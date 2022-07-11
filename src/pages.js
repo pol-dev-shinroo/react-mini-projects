@@ -2,5 +2,6 @@ import Home from "./Home/Home.jsx";
 import Birthday from "./Projects/01-birthday-reminder/Birthday.jsx";
 import Tour from "./Projects/02-tour/Tour.jsx";
 import Review from "./Projects/03-review/Review.jsx";
+import Accordion from "./Projects/04-accordion/Accordion.jsx";
 
-export { Home, Birthday, Tour, Review };
+export { Home, Birthday, Tour, Review, Accordion };
