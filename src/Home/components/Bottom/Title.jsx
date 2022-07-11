@@ -16,7 +16,7 @@ const TitleContainer = styled.div`
 `;
 
 const H2 = styled.h2`
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size: 2.441rem;
     margin: 0 0 1.38rem;
     font-weight: 400;
