@@ -5,7 +5,7 @@ import Nav from "./components/Nav";
 import data from "./data";
 
 // A way to automate categorization:
-const allCategories = ["all", ...new Set(data.map((item) => item.category))];
+// const allCategories = ["all", ...new Set(data.map((item) => item.category))];
 
 const Menu = () => {
     const arr = ["all", "breakfast", "lunch", "shakes"];
