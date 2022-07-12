@@ -68,6 +68,10 @@ const Wrapper = styled.div`
     background: #f1f5f8;
     min-height: 100vh;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 `;
 
 const Container = styled.div`
