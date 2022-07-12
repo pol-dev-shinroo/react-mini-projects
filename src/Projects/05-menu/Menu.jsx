@@ -2,10 +2,11 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
+import Desc from "./components/Desc";
 import data from "./data";
 
 // A way to automate categorization:
-// const allCategories = ["all", ...new Set(data.map((item) => item.category))];
+const allCategories = ["all", ...new Set(data.map((item) => item.category))];
 
 const Menu = () => {
     const arr = ["all", "breakfast", "lunch", "shakes"];
@@ -18,7 +19,6 @@ const Menu = () => {
     };
 
     const listHandler = (arr, index) => {
-        console.log(data);
         if (index === 0) {
             data.sort((a, b) => {
                 return a.price - b.price;
@@ -32,8 +32,6 @@ const Menu = () => {
             setList(newList);
         }
     };
-
-    console.log(list);
 
     useEffect(() => {
         listHandler(arr, index);
@@ -51,6 +49,7 @@ const Menu = () => {
                                 index={index}
                                 indexHandler={indexHandler}
                                 id={id}
+                                key={id}
                             />
                         );
                     })}
@@ -58,19 +57,9 @@ const Menu = () => {
                 {list && (
                     <Grid>
                         {list.map((item) => {
-                            console.log(item.img);
-                            return (
-                                <Card key={item.id}>
-                                    <Image src={item.img} alt="" />
-                                    <Content>
-                                        <header>
-                                            <Title>{item.title}</Title>
-                                            <Title>${item.price}</Title>
-                                        </header>
-                                        <Text>{item.desc}</Text>
-                                    </Content>
-                                </Card>
-                            );
+                            const { id, ...props } = item;
+                            console.log(id);
+                            return <Desc key={id} {...props} />;
                         })}
                     </Grid>
                 )}
@@ -109,48 +98,6 @@ const Grid = styled.div`
     gap: 3rem 2rem;
     justify-items: center;
     min-width: 438px;
-`;
-
-const Card = styled.div`
-    @media screen and (min-width: 768px) {
-        grid-template-columns: 225px 1fr;
-        grid-gap: 0 1.25rem;
-        gap: 0 1.25rem;
-        max-width: 40rem;
-    }
-    display: grid;
-    grid-gap: 1rem 2rem;
-    gap: 1rem 2rem;
-    max-width: 25rem;
-`;
-
-const Image = styled.img`
-    @media screen and (min-width: 768px) {
-        height: 175px;
-    }
-    height: 200px;
-    width: 100%;
-    border: 0.25rem solid #c59d5f;
-    display: block;
-    border-radius: 0.25rem;
-    object-fit: cover;
-`;
-
-const Content = styled.div`
-    header {
-        display: flex;
-        justify-content: space-between;
-        border-bottom: 0.5px dotted #617d98;
-    }
-`;
-
-const Title = styled.h4`
-    text-transform: capitalize;
-`;
-
-const Text = styled.p`
-    margin-bottom: 0;
-    padding-top: 1rem;
 `;
 
 export default Menu;

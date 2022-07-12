@@ -4,14 +4,12 @@ import styled from "styled-components";
 const Nav = ({ item, index, indexHandler, id }) => {
     const [isCurrent, setIsCurrent] = useState(false);
     const checkCurrent = (index, id) => {
-        console.log(index, id);
         if (id === index) {
             setIsCurrent(true);
         } else {
             setIsCurrent(false);
         }
     };
-    console.log(isCurrent);
 
     useEffect(() => {
         checkCurrent(index, id);
