@@ -54,6 +54,7 @@ const Lorem = () => {
 const Container = styled.div`
     background: hsl(210, 36%, 96%);
     padding-top: 4rem;
+    height: 100vh;
 `;
 
 const Wrapper = styled.div`
