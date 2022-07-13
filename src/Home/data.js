@@ -6,6 +6,7 @@ import menu from "../assets/Home/05-menu.png";
 import tabs from "../assets/Home/06-tabs.png";
 import slider from "../assets/Home/07-slider.png";
 import lorem from "../assets/Home/08-lorem.png";
+import color from "../assets/Home/09-color-generator.png";
 
 export const data = [
     { key: 1, link: "birthday", name: "birthday reminder", img: birthday },
@@ -16,4 +17,5 @@ export const data = [
     { key: 6, link: "tabs", name: "tab", img: tabs },
     { key: 7, link: "slider", name: "slider", img: slider },
     { key: 8, link: "lorem", name: "lorem generator", img: lorem },
+    { key: 9, link: "color", name: "color generator", img: color },
 ];

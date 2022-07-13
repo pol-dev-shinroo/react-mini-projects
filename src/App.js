@@ -10,6 +10,7 @@ import {
     Tabs,
     Slider,
     Lorem,
+    Generator,
 } from "./pages";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
                 <Route path="tabs" element={<Tabs />} />
                 <Route path="slider" element={<Slider />} />
                 <Route path="lorem" element={<Lorem />} />
+                <Route path="color" element={<Generator />} />
             </Routes>
         </BrowserRouter>
     );
