@@ -1,6 +1,15 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home, Birthday, Tour, Review, Accordion, Menu, Tabs } from "./pages";
+import {
+    Home,
+    Birthday,
+    Tour,
+    Review,
+    Accordion,
+    Menu,
+    Tabs,
+    Slider,
+} from "./pages";
 
 function App() {
     return (
@@ -13,6 +22,7 @@ function App() {
                 <Route path="accordion" element={<Accordion />} />
                 <Route path="menu" element={<Menu />} />
                 <Route path="tabs" element={<Tabs />} />
+                <Route path="slider" element={<Slider />} />
             </Routes>
         </BrowserRouter>
     );
