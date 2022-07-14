@@ -11,6 +11,7 @@ import {
     Slider,
     Lorem,
     Generator,
+    Grocery,
 } from "./pages";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
                 <Route path="slider" element={<Slider />} />
                 <Route path="lorem" element={<Lorem />} />
                 <Route path="color" element={<Generator />} />
+                <Route path="grocery" element={<Grocery />} />
             </Routes>
         </BrowserRouter>
     );
