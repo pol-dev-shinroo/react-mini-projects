@@ -9,6 +9,7 @@ import Slider from "./Projects/07-slider/Slider.jsx";
 import Lorem from "./Projects/08-lorem-ipsum/Lorem.jsx";
 import Generator from "./Projects/09-color-generator/Generator.jsx";
 import Grocery from "./Projects/10-grocery/Grocery.jsx";
+import Navbar from "./Projects/11-navbar/NavBar.jsx";
 
 export {
     Home,
@@ -22,4 +23,5 @@ export {
     Lorem,
     Generator,
     Grocery,
+    Navbar,
 };

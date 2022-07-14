@@ -10,7 +10,6 @@ const Form = ({
     removeAlert,
     list,
 }) => {
-    console.log(alert);
     return (
         <form onSubmit={handleSubmit}>
             {alert.open && (

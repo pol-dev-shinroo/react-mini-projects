@@ -12,6 +12,7 @@ import {
     Lorem,
     Generator,
     Grocery,
+    Navbar,
 } from "./pages";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
                 <Route path="lorem" element={<Lorem />} />
                 <Route path="color" element={<Generator />} />
                 <Route path="grocery" element={<Grocery />} />
+                <Route path="navbar" element={<Navbar />} />
             </Routes>
         </BrowserRouter>
     );

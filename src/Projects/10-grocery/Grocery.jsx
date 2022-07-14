@@ -60,7 +60,6 @@ const Grocery = () => {
             const item = list.find((item) => item.id === id);
             refContainer.current.value = item.name;
             return item;
-            // difference between find and filter (find returns the item iteself (obj), filter returns in an array)
         });
         setIsEditing(true);
     };
