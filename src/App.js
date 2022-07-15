@@ -13,6 +13,7 @@ import {
     Generator,
     Grocery,
     Navbar,
+    Test,
 } from "./pages";
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
                 <Route path="color" element={<Generator />} />
                 <Route path="grocery" element={<Grocery />} />
                 <Route path="navbar" element={<Navbar />} />
+                <Route path="test" element={<Test />} />
             </Routes>
         </BrowserRouter>
     );
