@@ -9,6 +9,7 @@ import lorem from "../assets/Home/08-lorem.png";
 import color from "../assets/Home/09-color-generator.png";
 import grocery from "../assets/Home/10-grocery.png";
 import navbar from "../assets/Home/11-navbar.png";
+import sidenavbar from "../assets/Home/12-sidenavbar.png";
 
 export const data = [
     { key: 1, link: "birthday", name: "birthday reminder", img: birthday },
@@ -21,5 +22,11 @@ export const data = [
     { key: 8, link: "lorem", name: "lorem generator", img: lorem },
     { key: 9, link: "color", name: "color generator", img: color },
     { key: 10, link: "grocery", name: "grocery list", img: grocery },
-    { key: 10, link: "navbar", name: "drop-down menu", img: navbar },
+    { key: 11, link: "navbar", name: "drop-down menu", img: navbar },
+    {
+        key: 12,
+        link: "sidenavbar",
+        name: "side menu and modal",
+        img: sidenavbar,
+    },
 ];
