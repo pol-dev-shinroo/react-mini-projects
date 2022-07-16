@@ -14,6 +14,7 @@ import {
     Grocery,
     Navbar,
     SideNavbar,
+    Stripe,
     Test,
 } from "./pages";
 
@@ -34,6 +35,7 @@ function App() {
                 <Route path="grocery" element={<Grocery />} />
                 <Route path="navbar" element={<Navbar />} />
                 <Route path="sidenavbar" element={<SideNavbar />} />
+                <Route path="stripe" element={<Stripe />} />
                 <Route path="test" element={<Test />} />
             </Routes>
         </BrowserRouter>

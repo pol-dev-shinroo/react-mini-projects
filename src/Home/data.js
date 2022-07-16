@@ -10,6 +10,7 @@ import color from "../assets/Home/09-color-generator.png";
 import grocery from "../assets/Home/10-grocery.png";
 import navbar from "../assets/Home/11-navbar.png";
 import sidenavbar from "../assets/Home/12-sidenavbar.png";
+import stripe from "../assets/Home/13-stripe.png";
 
 export const data = [
     { key: 1, link: "birthday", name: "birthday reminder", img: birthday },
@@ -28,5 +29,11 @@ export const data = [
         link: "sidenavbar",
         name: "side menu and modal",
         img: sidenavbar,
+    },
+    {
+        key: 13,
+        link: "stripe",
+        name: "stripe navbar",
+        img: stripe,
     },
 ];

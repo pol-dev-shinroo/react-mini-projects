@@ -12,6 +12,7 @@ import Grocery from "./Projects/10-grocery/Grocery.jsx";
 import Navbar from "./Projects/11-navbar/NavBar.jsx";
 import SideNavbar from "./Projects/12-side-nav-bar-and-modal/Main.jsx";
 import Test from "./Projects/test/Test.jsx";
+import Stripe from "./Projects/13-stripe/Stripe.jsx";
 
 export {
     Home,
@@ -28,4 +29,5 @@ export {
     Navbar,
     SideNavbar,
     Test,
+    Stripe,
 };
