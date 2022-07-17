@@ -11,8 +11,9 @@ import Generator from "./Projects/09-color-generator/Generator.jsx";
 import Grocery from "./Projects/10-grocery/Grocery.jsx";
 import Navbar from "./Projects/11-navbar/NavBar.jsx";
 import SideNavbar from "./Projects/12-side-nav-bar-and-modal/Main.jsx";
-import Test from "./Projects/test/Test.jsx";
 import Stripe from "./Projects/13-stripe/Stripe.jsx";
+import Cart from "./Projects/14-cart/Cart.jsx";
+import Cocktail from "./Projects/15-cocktail/Main.jsx";
 
 export {
     Home,
@@ -28,6 +29,7 @@ export {
     Grocery,
     Navbar,
     SideNavbar,
-    Test,
     Stripe,
+    Cart,
+    Cocktail,
 };

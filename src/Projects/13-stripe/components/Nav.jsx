@@ -17,9 +17,11 @@ const Nav = () => {
         if (!e.target.classList.contains("link-btn")) {
             closeSubmenu();
         }
+        console.log("mouse over");
+        closeSubmenu();
     };
     return (
-        <Wrapper>
+        <Wrapper onMouseOver={handleSubmenu}>
             <Container>
                 <Header>
                     <Img src={logo} alt="logo" />
@@ -32,7 +34,10 @@ const Nav = () => {
                         const { id, page } = item;
                         return (
                             <li key={id}>
-                                <button onMouseOver={displaySubmenu}>
+                                <button
+                                    className="link-btn"
+                                    onMouseOver={displaySubmenu}
+                                >
                                     {page}
                                 </button>
                             </li>
@@ -53,6 +58,7 @@ const Wrapper = styled.div`
     background: transparent;
     z-index: 2;
     position: relative;
+    border: 2px solid red;
 `;
 
 const Container = styled.div`

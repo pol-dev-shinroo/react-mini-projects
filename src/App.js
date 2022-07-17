@@ -15,8 +15,17 @@ import {
     Navbar,
     SideNavbar,
     Stripe,
-    Test,
+    Cart,
+    Cocktail,
 } from "./pages";
+
+import {
+    HomeCocktail,
+    About,
+    SingleCocktail,
+    Error,
+    NavbarCocktail,
+} from "./Projects/15-cocktail/index";
 
 function App() {
     return (
@@ -36,7 +45,9 @@ function App() {
                 <Route path="navbar" element={<Navbar />} />
                 <Route path="sidenavbar" element={<SideNavbar />} />
                 <Route path="stripe" element={<Stripe />} />
-                <Route path="test" element={<Test />} />
+                <Route path="cart" element={<Cart />} />
+                <Route path="cocktail" element={<Cocktail />}></Route>
+                <Route path="*" element={<>wrong page</>} />
             </Routes>
         </BrowserRouter>
     );
