@@ -58,7 +58,6 @@ const Wrapper = styled.div`
     background: transparent;
     z-index: 2;
     position: relative;
-    border: 2px solid red;
 `;
 
 const Container = styled.div`

@@ -59,7 +59,6 @@ const Wrapper = styled.div`
     padding: 2rem;
     border-radius: 0.25rem;
     transition: all 0.3s linear;
-    border: 2px solid red;
     &:before {
         content: "";
         display: block;

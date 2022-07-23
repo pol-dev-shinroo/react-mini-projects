@@ -39,7 +39,6 @@ const Sidebar = () => {
 };
 
 const Wrapper = styled.div`
-    border: 2px solid red;
     position: fixed;
     top: 0;
     left: 0;
@@ -82,7 +81,6 @@ const Btn = styled.button`
     top: 1rem;
     right: 1rem;
     cursor: pointer;
-    border: 2px solid red;
 `;
 
 const Content = styled.div``;
