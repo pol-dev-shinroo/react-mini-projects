@@ -19,14 +19,6 @@ import {
     Cocktail,
 } from "./pages";
 
-import {
-    HomeCocktail,
-    About,
-    SingleCocktail,
-    Error,
-    NavbarCocktail,
-} from "./Projects/15-cocktail/index";
-
 function App() {
     return (
         <BrowserRouter>

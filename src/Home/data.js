@@ -11,6 +11,7 @@ import grocery from "../assets/Home/10-grocery.png";
 import navbar from "../assets/Home/11-navbar.png";
 import sidenavbar from "../assets/Home/12-sidenavbar.png";
 import stripe from "../assets/Home/13-stripe.png";
+import cart from "../assets/Home/14-cart.png";
 
 export const data = [
     { key: 1, link: "birthday", name: "birthday reminder", img: birthday },
@@ -35,5 +36,11 @@ export const data = [
         link: "stripe",
         name: "stripe navbar",
         img: stripe,
+    },
+    {
+        key: 14,
+        link: "cart",
+        name: "shopping cart",
+        img: cart,
     },
 ];
