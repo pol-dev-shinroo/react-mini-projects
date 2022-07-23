@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { useGlobalContext } from "../context";
 
 const CartContainer = () => {
-    const { cart } = useGlobalContext();
+    const { cart, total, clearCart } = useGlobalContext();
     if (cart.length === 0) {
         return (
             <Cart>
@@ -33,10 +33,10 @@ const CartContainer = () => {
                 <hr />
                 <div>
                     <Total>
-                        total <span>$0.00</span>
+                        total <span>${total}</span>
                     </Total>
                 </div>
-                <Btn onClick={() => console.log("clear cart")}>clear cart</Btn>
+                <Btn onClick={clearCart}>clear cart</Btn>
             </footer>
         </Cart>
     );
